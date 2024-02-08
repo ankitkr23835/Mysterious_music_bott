@@ -91,12 +91,7 @@ async def fallen_startup():
     ASS_NAME = getme2.first_name + " " + (getme2.last_name or "")
     ASS_USERNAME = getme2.username
     ASS_MENTION = getme2.mention
-    try:
-        await app2.join_chat("DevilsHeavenMF")
-        await app2.join_chat("FallenAssociation")
-    except:
-        pass
-
+    
     ANON = "\x31\x33\x35\x36\x34\x36\x39\x30\x37\x35"
     for SUDOER in config.SUDO_USERS:
         SUDOERS.add(SUDOER)
